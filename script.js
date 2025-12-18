@@ -35,7 +35,6 @@ your presence feels calm,
 and being you is already enough 💖
 
 I wrote a Line.....✍️
-
 "Mujhe toh C++ ne luta, Python mein kaha dum tha,
 Meri khushi wahi doobi,
 Jahan tu paas thi… aur semicolon kam tha 😅💖"

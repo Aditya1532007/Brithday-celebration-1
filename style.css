@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: radial-gradient(circle at bottom, #1e293b, #000);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+}
+
+canvas {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  display: none;
+}
+
+.card {
+  position: relative;
+  z-index: 2;
+  max-width: 360px;
+  padding: 28px;
+  border-radius: 18px;
+  background: rgba(255,255,255,0.12);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 20px 45px rgba(0,0,0,0.5);
+  text-align: center;
+  display: none;
+}
+
+#text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  white-space: pre-line;
+}
+
+.cursor {
+  display: inline-block;
+  width: 5px;
+  height: 1.1em;
+  background: #fff;
+  margin-left: 4px;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+.tag {
+  margin-top: 18px;
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+
+/* Start Screen */
+.start-screen {
+  z-index: 3;
+  text-align: center;
+}
+
+.start-btn {
+  padding: 14px 30px;
+  border-radius: 30px;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background: linear-gradient(135deg, #ff7a7a, #ffb703);
+  cursor: pointer;
+}
+
+/* Cake */
+.cake {
+  font-size: 120px;
+  display: none;
+  z-index: 3;
+  transition: transform 0.3s;
+}
+
+.cake.cut {
+  transform: scale(0.9) rotate(-5deg);
+  filter: grayscale(40%);
+}
+
+.tap-text {
+  margin-top: 12px;
+  opacity: 0.8;
